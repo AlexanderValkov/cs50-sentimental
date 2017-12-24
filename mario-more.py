@@ -3,15 +3,15 @@ from sys import argv
 def main():
     while True:
         try:
-            num = int(input("Height: "))
-            if num > 0 and num < 23:
+            height = int(input("Height: "))
+            if height > 0 and height < 23:
                 break
         except ValueError:
             pass
 
     # printing
-    for i in range(num):
-        j = num - i - 1
+    for i in range(height):
+        j = height - i - 1
         for k in range(j):
             print(f" ", end="")
         for k in range(i + 1):
